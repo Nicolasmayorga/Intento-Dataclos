@@ -1,0 +1,214 @@
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+
+/*------ Variables */
+:root{
+  /*------ Colores */
+  --green-color: #7ACC2D;
+  --black-color: #313337;
+  --white-color: white;
+  /*------ Tipografía */
+  --normal:12px;
+  /*------ Espaciado */
+  --space:10px;
+  --space-2:20px;
+  /*------ Box shadow*/
+  --box:0px 0 2px 1px #e6e5e9;
+}
+
+/* -------------------------------------------  */
+/* /////////////////principal///////// */
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Helvetica;
+  color: var(--black-color);
+}
+
+p, label{
+  font-size: var(--normal);
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98,8%;
+  padding: var(--space);
+  min-height: 60px;
+  background-color: var(--green-color);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--black-color);
+  font-size: var(--normal);
+}
+
+nav a:hover{
+  color: var(--white-color)
+}
+
+nav ul{
+  display: flex;
+}
+
+nav ul li{
+  padding-right: 20px;
+  list-style: none;
+}
+
+hr{
+  opacity: .2;
+}
+/* ///////acá termina el nav/////// */
+
+/* //////Acá comienza en main section/// */
+
+.main_section{
+  text-align: center;
+  padding: 15%;
+}
+/* //////Acá termina en main section/// */
+
+/* -------------------------------------------  PRODUCTOS */
+
+.productos{
+  background-image: url("../images/curve.png");
+  padding: 15%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 95px;
+  background-size: cover;
+}
+
+.producto{
+  padding: 20px;
+  margin-top: -226px;
+}
+
+.image-product{
+  text-align: center;
+}
+
+.content{
+  padding: 20px;
+  background: var(--white-color);
+  border-radius: 3px;
+  box-shadow: var(--box);
+}
+
+.main_btn{
+  padding: var(--normal);
+  background-color: var(--green-color);
+  width: 100%;
+  border: 0px;
+  border-radius: 2px;
+  cursor: pointer;
+  color: var(--white-color);
+
+}
+
+.main_btn:hover{
+  background-color: #63a426;
+}
+
+/* Acá terminan los productos */
+
+/* ///Acá comienzan beneficios */
+
+.beneficios{
+  padding: 10px;
+  display: flex;
+}
+
+.beneficio{
+  text-align: center;
+  padding: 20px;
+}
+
+.beneficio img{
+  max-height: 100px;
+}
+
+.text_beneficio{
+  text-align: justify;
+}
+/* ///Acá terminan beneficios */
+
+/* <!-- Acá comienzan testimonios --> */
+
+.Mention_title{
+  text-align: center;
+}
+
+.mentions{
+  display: flex;
+  padding: 2%;
+
+}
+
+.mention{
+  padding: var(--space);
+  justify-content: space-between;
+}
+
+.mention_content{
+  box-shadow: var(--box);
+}
+
+.mention_content img{
+  width: 100%;
+}
+
+/* <!-- Acá termina testimonios --> */
+
+/* ////////////////acá comienza la venta////////////// */
+
+.modulo_de_pago{
+  background-color: var(--white-color);
+  box-shadow: var(--box);
+  padding: var(--space);
+}
+
+.modulo_de_pago_images{
+  max-width: 150px;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+.data{
+  margin-top: var(--space);
+  width: 100%;
+  height: 38px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box;
+
+}
+
+.modulo_de_pago .main_btn{
+  margin-top: 10px;
+}
+
+/* ------------------------------------------- Footer */
+footer{
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--normal);
+  background-color: var(--black-color);
+  padding: var(--space);
+  color: var(--white-color);
+}
+.contact a{
+  color: var(--green-color);
+}
